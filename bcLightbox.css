@@ -1,0 +1,142 @@
+.productView-images {
+  position: relative;
+}
+.productView-images .bcLightboxOverlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+.productView-images .bcLightbox {
+  display: none;
+  position: fixed;
+  text-align: center;
+  width: 90%;
+  max-width: 1100px;
+  height: 90%;
+  bottom: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+  -moz-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  -o-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+  margin: 0 auto;
+  padding: 30px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  z-index: 99999;
+}
+@media (min-width: 750px) {
+  .productView-images .bcLightbox {
+    padding: 30px;
+  }
+}
+.productView-images .bcLightbox .bcLightbox--close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 1.75em;
+  cursor: pointer;
+}
+.productView-images .bcLightbox .left {
+  width: 8%;
+  margin: 0 0 0 6%;
+  float: left;
+  height: 100%;
+}
+.productView-images .bcLightbox .left ul {
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  position: relative;
+}
+.productView-images .bcLightbox .left ul.slick-vertical .slick-next {
+  top: auto;
+}
+.productView-images .bcLightbox .left ul li {
+  display: table;
+  width: 100% !important;
+  min-height: 96px;
+  max-height: 96px;
+}
+.productView-images .bcLightbox .left ul li a {
+  border: 1px solid #ccc;
+  padding: 2px;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.productView-images .bcLightbox .left ul li a img {
+  max-height: 88px;
+  margin: 0 auto;
+}
+.productView-images .bcLightbox .left ul li a:hover {
+  border-color: #205689;
+}
+.productView-images .bcLightbox .left ul li.selected a {
+  border-color: #205689;
+}
+.productView-images .bcLightbox .right {
+  width: 83%;
+  float: right;
+  height: 100%;
+  position: relative;
+}
+.productView-images .bcLightbox .right .bcLightbox--mainImage {
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.productView-images .bcLightbox .imageControl {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 10;
+}
+@media (min-width: 750px) {
+  .productView-images .bcLightbox .imageControl {
+    display: block;
+  }
+}
+.productView-images .bcLightbox .imageControl .previous,
+.productView-images .bcLightbox .imageControl .next {
+  font-size: 5em;
+  cursor: pointer;
+  width: 60px;
+  text-align: center;
+  color: #205689;
+}
+.productView-images .bcLightbox .imageControl .previous {
+  float: left;
+}
+.productView-images .bcLightbox .imageControl .next {
+  float: right;
+}
+@media only screen and (max-height: 660px) and (min-width: 750px) {
+  .productView-images .bcLightbox .left ul .slick-list {
+    height: 288px !important;
+  }
+}

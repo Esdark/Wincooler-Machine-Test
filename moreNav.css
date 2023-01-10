@@ -1,0 +1,55 @@
+.navPages #more-nav {
+  vertical-align: top;
+  padding-left: 0;
+  width: 120px;
+  display: none;
+  position: relative;
+}
+.navPages #more-nav li {
+  width: 100%;
+  border-left: 2px solid #616365;
+  background: #484848;
+  min-height: 58px;
+  line-height: 58px;
+}
+.navPages #more-nav li a {
+  line-height: 20px;
+}
+.navPages #more-nav li .fa {
+  padding-right: 5px;
+}
+.navPages #more-nav .navPages-item {
+  width: 100%;
+  border: 0;
+  border-top: 2px solid #616365;
+}
+.navPages #more-nav .navPages-item .navPage-subMenu {
+  display: none;
+}
+.navPages .subfilter {
+  display: none;
+  position: absolute;
+  background: #3d4042;
+  top: 55px;
+}
+.navPages ul .navPages-item .navPage-subMenu-item {
+  line-height: normal;
+}
+.navPages #more-nav li .subfilter i {
+  display: none;
+}
+@media only screen and (max-width: 1075px) and (min-width: 750px) {
+  .navPages ul {
+    width: auto;
+  }
+  .navPages ul .navPages-item {
+    width: 120px !important;
+    float: left;
+    min-height: 58px;
+    line-height: 58px;
+  }
+  .navPages ul .navPages-item .navPages-action {
+    vertical-align: middle;
+    line-height: normal;
+  }
+}
